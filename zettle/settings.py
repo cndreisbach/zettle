@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'debug_toolbar',
+    'django_extensions',
 
     # My apps
     'notes',
