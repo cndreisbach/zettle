@@ -43,6 +43,9 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'debug_toolbar',
+
+    # My apps
+    'notes',
 ]
 
 MIDDLEWARE = [
