@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
+from notes.api import NoteResource
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/notes/', include(NoteResource.urls())),
 ]
 
 if settings.DEBUG:

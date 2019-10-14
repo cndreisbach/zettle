@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # Third-party apps
     'debug_toolbar',
     'django_extensions',
+    'registration',
 
     # My apps
     'notes',
@@ -123,3 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Registration
+
+ACCOUNT_ACTIVATION_DAYS = 7
