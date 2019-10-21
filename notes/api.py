@@ -21,10 +21,19 @@ class NoteResource(DjangoResource):
         })
 
     def is_authenticated(self):
-        return self.request.user.is_authenticated()
+        if self.request.headers.get('Authorization') and self.request.headers[
+                'Authorization'].startswith('Token'):
+            _, token = self.request.headers['Authorization'].split(" ")
+            try:
+                user = User.objects.get(api_token=token)
+                self.request.user = user
+                return True
+            except User.DoesNotExist:
+                return False
+        return False
 
     def list(self):
-        return self.request.user.notes
+        return self.request.user.notes.all()
 
     def detail(self, pk):
         return self.request.user.notes.get(pk=pk)

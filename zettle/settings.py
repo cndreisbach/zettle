@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY',
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS: List[str] = []
+ALLOWED_HOSTS: List[str] = ['localhost']
 INTERNAL_IPS = [
     '0.0.0.0',
     '127.0.0.1',
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'registration',
 
     # My apps
+    'users',
     'notes',
 ]
 
@@ -127,4 +128,5 @@ STATIC_URL = '/static/'
 
 # Registration
 
+AUTH_USER_MODEL = 'users.User'
 ACCOUNT_ACTIVATION_DAYS = 7
