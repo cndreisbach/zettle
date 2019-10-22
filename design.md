@@ -18,3 +18,12 @@
   * links to other notes (has and belongs to many)
   * tags (has and belongs to many)
 
+## Visual Design
+
+- Textmark (https://fonts.google.com/specimen/Fredoka+One)
+- Main font - Roboto or Plex (https://fonts.google.com/featured/Plex)
+
+
+## JavaScript
+
+- Try intercooler
