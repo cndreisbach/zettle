@@ -18,6 +18,7 @@ dj-database-url = "*"
 restless = "*"
 django-registration-redux = "*"
 hashids = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.7"

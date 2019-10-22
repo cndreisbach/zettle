@@ -2,10 +2,12 @@ from django.db import models
 from django.urls import reverse
 from django.conf import settings
 from hashids import Hashids
+from django_extensions.db.models import TimeStampedModel
+
 hashids = Hashids()
 
 
-class Note(models.Model):
+class Note(TimeStampedModel, models.Model):
     code = models.CharField(max_length=6, unique=True)
     owner = models.ForeignKey(to=settings.AUTH_USER_MODEL,
                               on_delete=models.CASCADE,

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zettle</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/tachyons.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/zettle.css' %}">
+</head>
+<body>
+  <div class="pv2 ph3">
+    <div class="f2 f1-ns textmark">zettle</div>
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>
