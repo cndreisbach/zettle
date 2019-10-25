@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1e2fdbbe21d70df4465a9f6cd373c7712d0bb844ec5fad8d31397a4cb63516dc"
+            "sha256": "7f3af6a61c09213ae837c6555fb0e7a70fdd1361750504e56f92e23772ddd7d3"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -76,21 +76,6 @@
             "index": "pypi",
             "version": "==2.2.5"
         },
-        "django-registration-redux": {
-            "hashes": [
-                "sha256:48f60ec15c9a34aad3ab7993c53c20fc32ac4f777fc64e132b337343302fa0ec",
-                "sha256:54403d9f7bce5370f5e2b9895c9e03e635fd4281fcc96b7a2dcb9dc639f846f0"
-            ],
-            "index": "pypi",
-            "version": "==2.6"
-        },
-        "hashids": {
-            "hashes": [
-                "sha256:6539b892a426e75747a9c0ad69409e9566f9c21b79310fc3424b5b6726f28da6"
-            ],
-            "index": "pypi",
-            "version": "==1.2.0"
-        },
         "idna": {
             "hashes": [
                 "sha256:c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407",
@@ -150,12 +135,12 @@
             ],
             "version": "==1.2.0"
         },
-        "restless": {
+        "shortuuid": {
             "hashes": [
-                "sha256:f66b590cd1a248fd60a7f6540dff318a180bcbf073eefa16ac5ea978c161087b"
+                "sha256:d08fd398f40f8baf87e15eef8355e92fa541bca4eb8465fefab7ee22f92711b9"
             ],
             "index": "pypi",
-            "version": "==2.1.1"
+            "version": "==0.5.0"
         },
         "six": {
             "hashes": [
@@ -384,11 +369,11 @@
         },
         "pytest": {
             "hashes": [
-                "sha256:7e4800063ccfc306a53c461442526c5571e1462f61583506ce97e4da6a1d88c8",
-                "sha256:ca563435f4941d0cb34767301c27bc65c510cb82e90b9ecf9cb52dc2c63caaa0"
+                "sha256:27abc3fef618a01bebb1f0d6d303d2816a99aa87a5968ebc32fe971be91eb1e6",
+                "sha256:58cee9e09242937e136dbb3dab466116ba20d6b7828c7620f23947f37eb4dae4"
             ],
             "index": "pypi",
-            "version": "==5.2.1"
+            "version": "==5.2.2"
         },
         "pyyaml": {
             "hashes": [

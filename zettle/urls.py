@@ -20,6 +20,7 @@ from notes import views as notes_views
 
 urlpatterns = [
     path('', notes_views.home, name="home"),
+    path('notes/', notes_views.notes_list, name="notes_list"),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
 ]

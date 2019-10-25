@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-notes list
+
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Add note</button>
+</form>
+
+{% for note in notes %}
+<p>{{ note.title }}</p>
+{% endfor %}
+
 {% endblock %}

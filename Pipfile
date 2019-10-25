@@ -15,10 +15,8 @@ psycopg2 = "*"
 django-debug-toolbar = "*"
 django-extensions = "*"
 dj-database-url = "*"
-restless = "*"
-django-registration-redux = "*"
-hashids = "*"
 django-allauth = "*"
+shortuuid = "*"
 
 [requires]
 python_version = "3.7"
